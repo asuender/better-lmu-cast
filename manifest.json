@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Better LMU Cast",
+  "version": "1.0",
+  "description": "Replaces LMUCast's custom controls with native browser video controls",
+  "content_scripts": [
+    {
+      "matches": ["*://cast.itunes.uni-muenchen.de/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
